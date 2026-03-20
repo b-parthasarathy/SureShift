@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SureShift - Weekly Income Protection Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">SureShift</h1>
+                <p class="tagline">Weekly Income Protection Dashboard</p>
+            </div>
+        </header>
+
+        <!-- Worker Profile -->
+        <section class="profile-section">
+            <div class="profile-header">
+                <h2 class="profile-name">Ravi Kumar</h2>
+                <span class="profile-badge">Active Member</span>
+            </div>
+            <div class="profile-details">
+                <div class="detail-item">
+                    <span class="detail-label">Location</span>
+                    <span class="detail-value">Chennai, Tamil Nadu</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Role</span>
+                    <span class="detail-value">Food Delivery Partner</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- KPI Cards -->
+        <section class="metrics-grid">
+            <div class="metric-card">
+                <h3 class="metric-label">Weekly Premium</h3>
+                <p class="metric-value">₹49</p>
+                <p class="metric-subtitle">per week</p>
+            </div>
+
+            <div class="metric-card">
+                <h3 class="metric-label">Risk Score</h3>
+                <p class="metric-value">Medium</p>
+                <span class="risk-badge risk-medium">Moderate</span>
+            </div>
+
+            <div class="metric-card">
+                <h3 class="metric-label">Workability Score</h3>
+                <p class="metric-value" id="workabilityScore">78</p>
+                <p class="metric-subtitle">out of 100</p>
+            </div>
+
+            <div class="metric-card">
+                <h3 class="metric-label">Coverage Status</h3>
+                <p class="metric-value">Active</p>
+                <span class="status-badge status-active">Protected</span>
+            </div>
+        </section>
+
+        <!-- Earnings & Payout Panel -->
+        <section class="earnings-panel">
+            <h3 class="panel-title">Earnings & Payout Calculation</h3>
+            <div class="earnings-grid">
+                <div class="earnings-item">
+                    <span class="earnings-label">Estimated Daily Earnings</span>
+                    <span class="earnings-value" id="dailyEarnings">₹800</span>
+                </div>
+                <div class="earnings-item">
+                    <span class="earnings-label">Work Loss Percentage</span>
+                    <span class="earnings-value" id="workLoss">0%</span>
+                </div>
+                <div class="earnings-item highlight">
+                    <span class="earnings-label">Dynamic Payout</span>
+                    <span class="earnings-value payout" id="dynamicPayout">₹0</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fraud Detection Panel -->
+        <section class="fraud-panel">
+            <h3 class="panel-title">Fraud Detection Status</h3>
+            <div class="fraud-content">
+                <div class="fraud-status">
+                    <span class="fraud-label">Sensor Validation Active</span>
+                    <span class="fraud-badge" id="fraudStatus">Verified</span>
+                </div>
+                <div class="sensor-indicators">
+                    <div class="sensor-item">
+                        <span class="sensor-dot"></span>
+                        <span class="sensor-name">GPS</span>
+                    </div>
+                    <div class="sensor-item">
+                        <span class="sensor-dot"></span>
+                        <span class="sensor-name">Accelerometer</span>
+                    </div>
+                    <div class="sensor-item">
+                        <span class="sensor-dot"></span>
+                        <span class="sensor-name">Gyroscope</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Simulation Button -->
+        <section class="simulation-control">
+            <button class="btn-simulate" id="simulateBtn" onclick="simulateDisruption()">Simulate Disruption Event</button>
+        </section>
+
+        <!-- System Processing Panel -->
+        <section class="system-panel">
+            <h3 class="panel-title">System Processing Log</h3>
+            <div class="system-log" id="systemLog">
+                <div class="log-entry idle">
+                    <span class="log-status"></span>
+                    <span class="log-message">System ready - Awaiting event trigger</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
